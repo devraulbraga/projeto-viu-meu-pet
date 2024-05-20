@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viu meu Pet?</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Pets (2).png" alt="Logo do site" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="add-pet.html">Adicionar Pet</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Viu Meu Pet?</h2>
+            <p>Nosso objetivo é ajudar os moradores da nossa cidade a encontrar seus animais de estimação perdidos. Aqui você pode:</p>
+            <ul>
+                <li>Anunciar um pet perdido com informações detalhadas e fotos.</li>
+                <li>Procurar por pets perdidos na sua região.</li>
+                <li>Receber notificações sobre avistamentos de pets.</li>
+            </ul>
+            <p>Estamos aqui para reunir donos e seus queridos pets, criando uma comunidade mais unida e solidária.</p>
+        </section>
+
+        <section id="recent-pets">
+            <h2>Pets Perdidos Recentemente</h2>
+            <div class="pet-carousel">
+                <div class="pet-card">
+                    <img src="pet1.jpg" alt="Foto do Pet 1">
+                    <h3>Nome do Pet 1</h3>
+                    <p>Raça: Raça do Pet 1</p>
+                    <p>Cor: Cor do Pet 1</p>
+                    <p>Localização: Localização do Pet 1</p>
+                </div>
+                <div class="pet-card">
+                    <img src="pet2.jpg" alt="Foto do Pet 2">
+                    <h3>Nome do Pet 2</h3>
+                    <p>Raça: Raça do Pet 2</p>
+                    <p>Cor: Cor do Pet 2</p>
+                    <p>Localização: Localização do Pet 2</p>
+                </div>
+                <div class="pet-card">
+                    <img src="pet2.jpg" alt="Foto do Pet 2">
+                    <h3>Nome do Pet 3</h3>
+                    <p>Raça: Raça do Pet 2</p>
+                    <p>Cor: Cor do Pet 2</p>
+                    <p>Localização: Localização do Pet 2</p>
+                </div>
+                <div class="pet-card">
+                    <img src="pet2.jpg" alt="Foto do Pet 2">
+                    <h3>Nome do Pet 4</h3>
+                    <p>Raça: Raça do Pet 2</p>
+                    <p>Cor: Cor do Pet 2</p>
+                    <p>Localização: Localização do Pet 2</p>
+                </div>
+                <div class="pet-card">
+                    <img src="pet2.jpg" alt="Foto do Pet 2">
+                    <h3>Nome do Pet 5</h3>
+                    <p>Raça: Raça do Pet 2</p>
+                    <p>Cor: Cor do Pet 2</p>
+                    <p>Localização: Localização do Pet 2</p>
+                </div>
+                <!-- Adicione mais cards conforme necessário -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pets Perdidos. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.pet-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    
+</body>
+</html>

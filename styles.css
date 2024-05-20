@@ -1,0 +1,107 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+header {
+    background-color: #1a5276; /* Azul escuro para o cabeçalho */
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 200px; /* Ajusta o tamanho da largura para 200 pixels */
+    height: auto; /* Mantém a proporção da altura */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem; /* Reduz o tamanho do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave no texto */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Adiciona estilo para os cards de pets */
+.pet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pet-card {
+    width: calc(33.33% - 20px); /* Ajusta a largura dos cards */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.pet-card h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.pet-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+
+main {
+    padding: 2rem;
+    max-width: 800px; /* Defina uma largura máxima */
+    margin: 0 auto;  /* Centraliza o conteúdo */
+    background-color: #fff; /* Fundo branco para o conteúdo principal */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Pet Perdido</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pag-pet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-pet.html">Adicionar Pet</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="add-pet">
+            <h2>Adicionar Pet Perdido</h2>
+            <form>
+                <label for="pet-name">Nome do Pet:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+
+                <label for="pet-description">Descrição:</label>
+                <textarea id="pet-description" name="pet-description" required></textarea>
+
+                <label for="pet-photo">Foto do Pet:</label>
+                <input type="file" id="pet-photo" name="pet-photo" accept="image/*" required>
+
+                <label for="last-seen">Última Localização Vista:</label>
+                <input type="text" id="last-seen" name="last-seen" required>
+
+                <label for="owner-contact">Contato do Dono:</label>
+                <input type="text" id="owner-contact" name="owner-contact" required>
+
+                <button type="submit">Adicionar Pet</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pets Perdidos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
